@@ -1,0 +1,118 @@
+* {
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  background-color: #18181B;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  max-width: 50rem;
+  margin-bottom: 5rem;
+}
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.input-section {
+  color: #FFF;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 0.4rem;
+  background: #DFDFDF;
+  height: 1.6rem;
+  outline: none;
+  margin: 0.5rem 0 3rem;
+}
+
+.button-generate {
+  padding: 2rem;
+  background-color: #58b645;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-generate:hover {
+  background-color: #4d9c3d;
+}
+
+.password-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hide-password {
+  display: none;
+}
+
+.password-title {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.generated-password {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+
+.generated-password:hover {
+  transform: scale(1.05);
+}
+
+.tooltip {
+  color: #FFF;
+  position: relative;
+  top: 1.2rem;
+  padding: 0.4rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.40);
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.password-section:hover .tooltip {
+  visibility: visible;
+  bottom: 3.1rem;
+  opacity: 1;
+}
